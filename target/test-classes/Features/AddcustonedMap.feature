@@ -1,10 +1,10 @@
 @tag
-Feature: Add customer
+Feature: Addcustomeronedmap
   I want to use this template for my feature file
 
-  @tag1
+  @tag2 @tag3
   Scenario: Generate the customer ID
-    Given user has to launch the browser
+   
     When user has to provide the details
       | fname   | ashu          |
       | lname   | kumar         |

@@ -1,0 +1,77 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Generate an customer ID",
+        "description": "",
+        "id": "addcusotmer;generate-an-customer-id",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9481380768,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should launch browser",
+            "match": {
+              "location": "AddCustomer.user_should_launch_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 57669445661,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user provide the valid details",
+            "match": {
+              "location": "AddCustomer.user_provide_the_valid_details()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath\u003d(//td[@align\u003d\u0027center\u0027])[2]\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027AMARNATH-PC\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat com.stepdefinition.AddCustomer.to_verify_the_customer_id_is_displayed(AddCustomer.java:43)\r\n\tat ✽.to verify the customer id is displayed(src/test/resources/Features/Addcust.feature:10)\r\n",
+              "duration": 9249955955,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "to verify the customer id is displayed",
+            "match": {
+              "location": "AddCustomer.to_verify_the_customer_id_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "AddCusotmer",
+    "description": "  I want to use this template for my feature file",
+    "id": "addcusotmer",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/Addcust.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

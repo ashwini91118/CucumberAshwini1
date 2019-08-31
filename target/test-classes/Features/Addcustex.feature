@@ -1,10 +1,10 @@
-@tag
-Feature: Add customer
+
+Feature: Addcustomer example
   I want to use this template for my feature file
 
-  @tag2
+  @tag1
   Scenario Outline: Generate the CustomerID
-    Given user should launch the browser
+    
     When user has to provide the valid details "<fname>","<llastname>","<email>","<address>","<phone>"
     Then to verify customer id has generated
 
