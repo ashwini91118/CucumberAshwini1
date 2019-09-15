@@ -2,7 +2,7 @@
 Feature: Addcustomer example
   I want to use this template for my feature file
 
-  @tag1
+  @tag2 @tag3
   Scenario Outline: Generate the CustomerID
     
     When user has to provide the valid details "<fname>","<llastname>","<email>","<address>","<phone>"

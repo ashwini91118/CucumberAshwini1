@@ -21,20 +21,21 @@ public class Addtarifftwodmap {
 		Hook.driver = new ChromeHook.driver();
 
 	}
-*/
+
 	@Given("user should enter the guru demo url and details")
 	public void user_should_enter_the_guru_demo_url_and_details() {
 		Hook.driver.get("http://demo.guru99.com/telecom/");
 		Hook.driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
-		Hook.driver.findElement(By.xpath("//a[text()='Add Tariff Plan']")).click();
+		
 
-	}
+	}*/
 
 	@When("user should provide the valid detailsm")
 	public void user_should_provide_the_valid_detailsm(io.cucumber.datatable.DataTable dataTable) {
 		System.out.println("when:1");
 		List<Map<String, String>> twodMap = dataTable.asMaps(String.class, String.class);
 		System.out.println(twodMap);
+		Hook.driver.findElement(By.xpath("//a[text()='Add Tariff Plan']")).click();
 		Hook.driver.findElement(By.id("rental1")).sendKeys(twodMap.get(0).get("monthlyRent"));
 		Hook.driver.findElement(By.id("local_minutes")).sendKeys(twodMap.get(0).get("freeLocalMinutes"));
 		Hook.driver.findElement(By.id("inter_minutes")).sendKeys(twodMap.get(0).get("freeinternationalminutes"));

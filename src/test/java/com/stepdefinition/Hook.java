@@ -26,7 +26,7 @@ public class Hook {
 		driver.quit();
 	}
 
-@Before("@tag2")
+@Before("@tag20")
 public void taggedhook() {
 	System.out.println("taggedhook");
 

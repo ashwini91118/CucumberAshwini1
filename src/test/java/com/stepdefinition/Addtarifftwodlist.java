@@ -22,7 +22,7 @@ public class Addtarifftwodlist {
 		Hook.driver.get("http://demo.guru99.com/telecom/");
 		Hook.driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 		
-		Hook.driver.findElement(By.xpath("//a[text()='Add Tariff Plan']")).click();
+		
 
 	}
 */
@@ -31,6 +31,7 @@ public class Addtarifftwodlist {
 		System.out.println("when:1");
 		List<List<String>> twodlist = dataTable.asLists(String.class);
 		System.out.println(twodlist);
+		Hook.driver.findElement(By.xpath("//a[text()='Add Tariff Plan']")).click();
 		Hook.driver.findElement(By.id("rental1")).sendKeys(twodlist.get(0).get(0));
 		Hook.driver.findElement(By.id("local_minutes")).sendKeys(twodlist.get(0).get(1));
 		Hook.driver.findElement(By.id("inter_minutes")).sendKeys(twodlist.get(0).get(2));

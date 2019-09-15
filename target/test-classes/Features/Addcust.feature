@@ -3,7 +3,7 @@
 Feature: Addcustomer scenario
   I want to use this template for my feature file
 Background: user should launch the browser
-  @tag1
+@Sanity
   Scenario: Generate an customer ID
     
     When user provide the valid details

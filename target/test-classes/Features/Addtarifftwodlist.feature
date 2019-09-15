@@ -1,8 +1,8 @@
-@tag
-Feature: Addtariff twodmap
+
+Feature: Addtariff twodlist
   I want to use this template for my feature file
 
-  @tag3 @tag2
+  @tag2
   Scenario: negavite to home with congratulation you add tariff plan
     
  

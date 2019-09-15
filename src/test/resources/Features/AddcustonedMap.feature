@@ -1,8 +1,8 @@
-@tag
+
 Feature: Addcustomeronedmap
   I want to use this template for my feature file
 
-  @tag2 @tag3
+  @tag2
   Scenario: Generate the customer ID
    
     When user has to provide the details

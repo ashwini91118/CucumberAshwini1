@@ -1,8 +1,8 @@
-@tag
+
 Feature: Addcustomer onedlist
   I want to use this template for my feature file
 
-  @tag1
+  @tag20
   Scenario: user should generate the CustomerID
     
     When user should provide the details
